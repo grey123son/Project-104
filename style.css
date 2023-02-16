@@ -1,0 +1,14 @@
+body {
+    color: white;
+    background-color: darkgray;
+}
+.heading {
+    width: 100%;
+    font-size: x-large;
+}
+.name_of_objects {
+    color: steelblue;
+}
+label {
+color: black;
+}
