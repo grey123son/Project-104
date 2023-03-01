@@ -18,12 +18,12 @@ Webcam.snap(function(data_uri) {
 
 console.log('ml5 version', ml5.version);
 
-classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/TV67pudGe/model.json',modelLoaded);
+classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/QI5O6RgQu/model.json',modelLoaded);
 
 function modelLoaded() {
 console.log('Model Loaded!');
 }
-
+ 
 function check() {
     img = document.getElementById('captured_image');
     classifier.classify(img, gotResult);

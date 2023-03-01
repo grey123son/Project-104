@@ -1,7 +1,6 @@
- https://teachablemachine.withgoogle.com/models/kmHhzhe5L/
 <html>
   <head>
-    <title>Image recognition</title>
+    <title>Family recognizer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -10,47 +9,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
    <link rel="stylesheet" href="style.css">
-    
+   <script src="main.js"></script>
   </head>
-
   <body>
-  <div class="container">
-    
     <center>
-      <h3 class="btn btn-default heading">IMAGE RECOGNITION</h3>
-      <br><br>
-
-      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
-
-      <b class="name_of_objects">
-        Watch
-        <hr>
-        Spoon
-        <hr>
-        Phone
-        <hr>
-        Water Bottle
-        <hr>
-      </b>
-
+    <h1>Family Face Recognizer</h1>
+    <p>This app is meant to identify:</p>
+    <b class="family">
+      Mom
+      <hr>
+      Dad
+      <hr>
+      Older sister
+      <hr>
+      Greyson
+      <hr>
+      Younger sister
+    </b>
       <label>Webcam View - </label>
       <div id="camera"></div>
       <br><br>
       <div id="result"></div>
       <br><br>
-      <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+      <button id="take_picture" onclick="take_snapshot();">Capture Image</button>
+      <br><br><br>
+      <button id="identify" onclick="check();">Identify Image</button>
       <br><br>
-      <button onclick="check();" class="btn btn-success">Identify Image</button>
-      <br><br>
-
-      <p style="font-size: 22px;">Object : <span id="result_object_name"></span> </p>
-      <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
     </center>
-
-  </div>
-<script src="main.js"></script>
-
   </body>
-</html>
-
- 
+  </html>

@@ -1,14 +1,18 @@
-body {
-    color: white;
+body{
+ background-color: slategrey;
+}
+#take_picture{
     background-color: darkgray;
+    border-radius: 20px;
+    border-color: rgb(59, 59, 59);
+    width: 120px;
+    height: 40px;
 }
-.heading {
-    width: 100%;
-    font-size: x-large;
-}
-.name_of_objects {
-    color: steelblue;
-}
-label {
-color: black;
+#identify{
+    background-color:darkslategray;
+    border-radius: 20px;
+    border-color:rgb(17, 27, 27);
+    color:cadetblue;
+    width: 160px;
+    height: 40px;
 }
